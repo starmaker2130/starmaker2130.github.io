@@ -94,19 +94,19 @@
                 <a-asset-item id="crate-mtl" src="../media/model/omega.mtl"></a-asset-item>
                 <!--<a-asset-item id="crate-obj" src="../media/model/alpha2.obj"></a-asset-item>-->
             </a-assets>
-            <a-marker-camera type='pattern' url='../media/pattern/md-heart.patt'>
+            <a-marker-camera wasd-controls type='pattern' url='../media/pattern/md-heart.patt'>
                   <!-- Using the asset management system. -->
-                <a-obj-model src="#crate-obj" rotation="-90 0 0" mtl="#crate-mtl" position='0 1.6 -2'>
+                <a-obj-model scale='2 2 2' src="#crate-obj" rotation="0 0 0" mtl="#crate-mtl" position='0 1.6 -2'>
                     <a-animation attribute="rotation"
                         dur="20000"
                         easing="linear"
                         fill="forwards"
-                        to="-90 360 0"
+                        to="0 360 0"
                         repeat="indefinite">
                     </a-animation>
                 </a-obj-model>
 
-                <a-entity geometry="primitive: plane; width: 5; height: 5;" rotation='-90 0 0' material='src: #floor-texture; repeat: 100 100;'></a-entity>
+                <a-entity geometry="primitive: plane; width: 5; height: 5;" rotation='0 0 0' material='src: #floor-texture; repeat: 100 100;'></a-entity>
             
             </a-marker-camera>
         </a-scene>
