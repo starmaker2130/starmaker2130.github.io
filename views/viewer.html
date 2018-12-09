@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8' />
     <meta name='viewport' content='width=device-width,initial-scale=1.0' />
-    <title>viewAR | Patrcie-Morgan Ongoly | v. 0.1.6</title>
+    <title>viewAR | Patrcie-Morgan Ongoly | v. 0.1.7</title>
     <link rel='stylesheet' type='text/css' href='../css/main.css' />
     <script src='../js/jquery-3.2.1.min.js'></script>
     <script src='../js/aframe080.min.js'></script>
@@ -94,7 +94,7 @@
                 <a-asset-item id="crate-mtl" src="../media/model/omega.mtl"></a-asset-item>
                 <!--<a-asset-item id="crate-obj" src="../media/model/alpha2.obj"></a-asset-item>-->
             </a-assets>
-            <a-marker-camera wasd-controls type='pattern' url='../media/pattern/md-heart.patt'>
+            <a-marker type='pattern' url='../media/pattern/md-heart.patt'>
                   <!-- Using the asset management system. -->
                 <a-obj-model scale='2 2 2' src="#crate-obj" rotation="-90 0 0" mtl="#crate-mtl" position='0 1.6 -2'>
                     <!--<a-animation attribute="rotation"
@@ -107,8 +107,8 @@
                 </a-obj-model>
 
                 <a-entity geometry="primitive: plane; width: 2; height: 2;" position='0 -1 -2' rotation='0 0 0' material='src: #floor-texture; repeat: 2 2;'></a-entity>
-            
-            </a-marker-camera>
+                <a-camera-static/>
+            </a-marker>
         </a-scene>
     </div>
 </body>
